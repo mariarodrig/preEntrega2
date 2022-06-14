@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Mukta:wght@200&family=Oooh+Baby&family=Poppins:wght@600&family=Quicksand:wght@300&family=Roboto:wght@100&family=Sedgwick+Ave&family=Whisper&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #99b898;
+    background-blend-mode: soft-light;
+    overflow-x: hidden;
+}
+
+.imgheader {
+    background-blend-mode: soft-light;
+}
+
+.carruselEspacio {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.imgInicio {
+    width: 400px;
+    height: 350px;
+    border: 2px solid whitesmoke;
+    margin-top: 15px;
+}
+
+.imgGaleria {
+    width: 185px;
+    height: 296;
+}
+
+.carousel-inner img {
+    width: 640px;
+    max-height: 360px;
+}
+
+.carousel-inner {
+    height: 360px;
+}
+
+.poppins {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+}
+
+.centrado {
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    min-height: 500px;
+}
+
+.row {
+    margin: 0 10px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.imgGaleria {
+    transition: all 1s;
+}
+
+.imgGaleria:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.nuevo {
+    background-color: #99b898;
+}
+
+.recuadro {
+    padding: 0 30px;
+    background-color: whitesmoke;
+    animation-name: animationsNuevo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animationsNuevo {
+    0% {
+        border: 2px solid hsla(180, 100%, 50%, 1);
+        border-radius: 10px;
+    }
+
+    50% {
+        border: 2px solid hsla(0, 100%, 50%, 1);
+        border-radius: 10px;
+    }
+
+    75% {
+        border: 2px solid hsla(180, 100%, 50%, 1);
+        border-radius: 10px;
+    }
+
+    100% {
+        border: 2px solid hsla(0, 100%, 50%, 1);
+        border-radius: 10px;
+    }
+}
+
+.textAviso {
+    text-align: center;
+    font-size: 28px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 100px 100px;
+    text-transform: uppercase;
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel {
+        height: 200px;
+    }
+
+    .carousel-inner img {
+        min-height: 198px;
+    }
+}
